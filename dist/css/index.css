@@ -1,0 +1,991 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "El Messiri", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  color: none !important;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(195, 135, 36, 0.6)), to(rgba(29, 28, 27, 0.4))), url("../../Images/heroBg.webp");
+  background: linear-gradient(rgba(195, 135, 36, 0.6), rgba(29, 28, 27, 0.4)), url("../../Images/heroBg.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background: url("../../Images/water_1.png");
+  width: 50%;
+  height: 50vh;
+  left: -5%;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.hero h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero .hero_child {
+  width: 60%;
+  padding: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.22);
+  -webkit-backdrop-filter: blur(50%);
+          backdrop-filter: blur(50%);
+  -webkit-box-shadow: 0 5px 5px 0 #000;
+          box-shadow: 0 5px 5px 0 #000;
+  height: 800px;
+}
+
+.hero .hero_child form p {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero .hero_child form h3,
+.hero .hero_child form h4 {
+  margin: 0px 0 0 0 !important;
+  text-align: center;
+}
+
+.hero .hero_child form h3 {
+  color: red;
+  font-size: 1.5em;
+}
+
+.hero .hero_child form h4 {
+  color: #c38724;
+  font-size: 2em;
+}
+
+.hero .hero_child form div {
+  margin-bottom: 20px;
+}
+
+.hero .hero_child form input {
+  width: 300px;
+  border-radius: 20px;
+  padding: 7px;
+  border: 2px solid #000;
+  outline: none;
+  padding-right: 20px;
+}
+
+.hero .hero_child form input::-webkit-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.hero .hero_child form input:-ms-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.hero .hero_child form input::-ms-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.hero .hero_child form input::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.hero .hero_child img {
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
+}
+
+.hero .hero_child .cntr_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero_child .cntr_btn button {
+  width: 250px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 0 5px 5px 0 #000;
+          box-shadow: 0 5px 5px 0 #000;
+  outline: none;
+  padding: 7px;
+  background: #35b29a;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero .hero_child .cntr_btn button:focus {
+  -webkit-box-shadow: inset 0 5px 5px 0 #000;
+          box-shadow: inset 0 5px 5px 0 #000;
+}
+
+.advantages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(195, 135, 36, 0.5)), to(rgba(195, 135, 36, 0.4))), url("../../Images/bg.jpg");
+  background: linear-gradient(rgba(195, 135, 36, 0.5), rgba(195, 135, 36, 0.4)), url("../../Images/bg.jpg");
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advantages h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 5em;
+  margin-bottom: 0;
+  z-index: 99;
+  color: #000;
+}
+
+.advantages::after {
+  content: "";
+  position: absolute;
+  background: url("../../Images/women.png");
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  left: 40%;
+}
+
+.advantages::before {
+  content: "";
+  position: absolute;
+  background: url("../../Images/flowers.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30%;
+  height: 100vh;
+  left: 20%;
+}
+
+.advantages_child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages_child .handler .advantages_child_each {
+  margin-bottom: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 7px 7px 0 #000;
+          box-shadow: 0 7px 7px 0 #000;
+}
+
+.advantages_child .handler .advantages_child_each ul {
+  color: #000;
+}
+
+.advantages_child .handler .advantages_child_each ul li {
+  list-style: none;
+  font-weight: bold;
+  line-height: 2;
+  font-size: 1.6em;
+  text-align: right;
+  position: relative;
+}
+
+.components {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0 20px 0;
+  background: #c38724 url("../../Images/woman-face.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+}
+
+.components h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+.components_child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.components_child_each {
+  width: 300px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0 20px 0;
+  -webkit-box-shadow: inset 2em 0 2em #35b29a, 0 5px 5px 0 black;
+          box-shadow: inset 2em 0 2em #35b29a, 0 5px 5px 0 black;
+  position: relative;
+  z-index: 99;
+}
+
+.components_child_each::before {
+  background: url("../../Images/water_3.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 500px;
+  content: "";
+  position: absolute;
+  height: 500px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.components_child_each h2 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.components_child_each ul {
+  margin: 0;
+  padding: 0;
+}
+
+.components_child_each ul li {
+  list-style: none;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 5px 5px 5px #000;
+}
+
+.clients_results {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #c38724;
+}
+
+.clients_results h1 {
+  z-index: 99;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.clients_results::after {
+  content: "";
+  position: absolute;
+  background: url("../../Images/flowers.png");
+  background-size: contain;
+  right: 0;
+  background-position: center;
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+}
+
+.clients_results::before {
+  content: "";
+  position: absolute;
+  background: url("../../Images/flowers.png");
+  background-size: contain;
+  left: 0;
+  background-position: center;
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+}
+
+.clients_results .swiper {
+  width: 50%;
+  height: 50%;
+}
+
+.clients_results .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.clients_results .swiper-slide img {
+  display: block;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.forum {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2))), url("../../Images/top_bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../../Images/top_bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.forum_child {
+  width: 60%;
+  padding: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+.forum_child_product::before {
+  background: url("../../Images/water_3.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  content: "";
+  position: absolute;
+  height: 500px;
+  z-index: 999;
+  opacity: 0.6;
+  left: 45%;
+}
+
+.forum_child form {
+  background: #fff;
+  width: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+}
+
+.forum_child form p {
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.forum_child form h3,
+.forum_child form h4 {
+  margin: 0px 0 0 0 !important;
+  text-align: center;
+}
+
+.forum_child form h3 {
+  color: red;
+  font-size: 1.5em;
+}
+
+.forum_child form h4 {
+  color: #c38724;
+  font-size: 2em;
+}
+
+.forum_child form div {
+  margin-bottom: 20px;
+}
+
+.forum_child form input {
+  width: 300px;
+  border-radius: 20px;
+  padding: 7px;
+  border: 2px solid #000;
+  outline: none;
+  padding-right: 20px;
+}
+
+.forum_child form input::-webkit-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.forum_child form input:-ms-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.forum_child form input::-ms-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.forum_child form input::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.forum_child img {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.forum_child .cntr_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forum_child .cntr_btn button {
+  width: 250px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 0 5px 5px 0 #000;
+          box-shadow: 0 5px 5px 0 #000;
+  outline: none;
+  padding: 7px;
+  background: #35b29a;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.forum_child .cntr_btn button:focus {
+  -webkit-box-shadow: inset 0 5px 5px 0 #000;
+          box-shadow: inset 0 5px 5px 0 #000;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer p {
+  width: 350px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+.howtouse {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2))), url("../../Images/top_bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../../Images/top_bg.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  color: #fff;
+}
+
+.howtouse h1 {
+  z-index: 99;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.howtouse_child {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howtouse_child_each {
+  width: 300px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0 20px 0;
+  -webkit-box-shadow: inset 2em 0 2em #c38724, 0 5px 5px 0 black;
+          box-shadow: inset 2em 0 2em #c38724, 0 5px 5px 0 black;
+  position: relative;
+  z-index: 99;
+}
+
+.howtouse_child_each h2 {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 7px solid #3affd8;
+}
+
+.howtouse_child_each::before {
+  background: url("../../Images/water_3.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 500px;
+  content: "";
+  position: absolute;
+  height: 500px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.howtouse_child_each ul {
+  margin: 0;
+  padding: 0;
+}
+
+.howtouse_child_each ul li {
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    padding: 0 !important;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 0%;
+    height: 100%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .hero h1 {
+    color: #fff;
+    z-index: 999;
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .hero h1 span {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .hero .hero_child {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: transparent;
+    -webkit-backdrop-filter: blur(50%);
+            backdrop-filter: blur(50%);
+    -webkit-box-shadow: 0 5px 5px 0 #000;
+            box-shadow: 0 5px 5px 0 #000;
+    height: 100%;
+    padding: 0;
+  }
+  .hero .hero_child form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff;
+    width: 100%;
+  }
+  .hero .hero_child form p {
+    color: #000;
+    font-size: 1.5em;
+  }
+  .hero .hero_child img {
+    width: 100%;
+    z-index: 99;
+  }
+  .advantages {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages h1 {
+    color: #000;
+    z-index: 999;
+    font-size: 2em;
+    margin-bottom: 2%;
+  }
+  .advantages h1 span {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .advantages::after {
+    content: "";
+    position: absolute;
+    background: transparent;
+    left: 0%;
+  }
+  .advantages::before {
+    content: "";
+    position: absolute;
+    background: url("../../Images/flowers.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .advantages_child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .components h1 {
+    color: #fff;
+    z-index: 999;
+    font-size: 2em;
+    margin-bottom: 2%;
+  }
+  .components h1 span {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .components_child {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 7px 0 7px;
+  }
+  .components_child_each {
+    width: 333px;
+    margin-bottom: 20px;
+  }
+  .components_child_each::before {
+    background: url("../../Images/water_3.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    content: "";
+    position: absolute;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  .components_child_each li {
+    text-shadow: 5px 5px 5px #000;
+    text-align: center !important;
+  }
+  .clients_results::after {
+    background: url("../../Images/flowers.png") no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .clients_results::before {
+    content: "";
+    position: absolute;
+    background: transparent;
+  }
+  .clients_results .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .clients_results .swiper-slide img {
+    width: 80%;
+  }
+  .forum {
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2))), url("../../Images/top_bg.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../../Images/top_bg.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  .forum_child {
+    width: 100%;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .forum_child_product::before {
+    background: "";
+    content: "";
+    width: 0%;
+    display: none;
+  }
+  .forum_child form {
+    width: 360px;
+    border-radius: 0px;
+  }
+  .forum_child form p {
+    font-size: 1.5em;
+  }
+  .forum_child img {
+    width: 100%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .howtouse h1 {
+    text-align: center;
+  }
+  .howtouse_child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .howtouse_child_each {
+    width: 333px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 0 20px 0;
+    -webkit-box-shadow: inset 2em 0 2em #c38724, 0 5px 5px 0 black;
+            box-shadow: inset 2em 0 2em #c38724, 0 5px 5px 0 black;
+    position: relative;
+    z-index: 99;
+    margin-bottom: 20px;
+  }
+  .howtouse_child_each h2 {
+    color: #3affd8;
+  }
+  .howtouse_child_each::before {
+    background: url("../../Images/water_3.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    content: "";
+    position: absolute;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  .howtouse_child_each ul {
+    margin: 0;
+    padding: 0;
+  }
+  .howtouse_child_each ul li {
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,710 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "El Messiri", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none !important;
+  color: none !important;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(195, 135, 36, 0.6), rgba(29, 28, 27, 0.4)),
+    url("../../Images/heroBg.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../../Images/water_1.png");
+    width: 50%;
+    height: 50vh;
+    left: -5%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(40deg);
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+  .hero_child {
+    width: 60%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(50%);
+    box-shadow: 0 5px 5px 0 #000;
+    height: 800px;
+    form {
+      p {
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+      }
+      h3,
+      h4 {
+        margin: 0px 0 0 0 !important;
+        text-align: center;
+      }
+      h3 {
+        color: red;
+        font-size: 1.5em;
+      }
+      h4 {
+        color: #c38724;
+        font-size: 2em;
+      }
+      div {
+        margin-bottom: 20px;
+      }
+      input {
+        width: 300px;
+        border-radius: 20px;
+        padding: 7px;
+        border: 2px solid #000;
+        outline: none;
+        padding-right: 20px;
+        &::placeholder {
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+    img {
+      width: 500px;
+      object-fit: cover;
+      margin: 0;
+    }
+    .cntr_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: 250px;
+        border-radius: 20px;
+        border: 2px solid #000;
+        box-shadow: 0 5px 5px 0 #000;
+        outline: none;
+        padding: 7px;
+        background: #35b29a;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+        color: #fff;
+        cursor: pointer;
+        &:focus {
+          box-shadow: inset 0 5px 5px 0 #000;
+        }
+      }
+    }
+  }
+}
+.advantages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(195, 135, 36, 0.5), rgba(195, 135, 36, 0.4)),
+    url("../../Images/bg.jpg");
+  flex-direction: column;
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5em;
+    margin-bottom: 0;
+    z-index: 99;
+    color: #000;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../../Images/women.png");
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    left: 40%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../../Images/flowers.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30%;
+    height: 100vh;
+    left: 20%;
+  }
+  &_child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .handler {
+      .advantages_child_each {
+        margin-bottom: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+        background:rgba(255,255,255,0.6);
+        box-shadow: 0 7px 7px 0 #000;
+        ul {
+          color: #000;
+          li {
+            list-style: none;
+            font-weight: bold;
+            line-height: 2;
+            font-size: 1.6em;
+            text-align: right;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+.components {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+  background: #c38724 url("../../Images/woman-face.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5em;
+    margin-bottom: 0;
+  }
+  &_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &_each {
+      width: 300px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px 0 20px 0;
+      box-shadow: inset 2em 0 2em #35b29a, 0 5px 5px 0 rgb(0, 0, 0);
+      position: relative;
+      z-index: 99;
+      &::before {
+        background: url("../../Images/water_3.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 500px;
+        content: "";
+        position: absolute;
+        height: 500px;
+        z-index: -1;
+        opacity: 0.5;
+      }
+      h2 {
+        color: #fff;
+        font-weight: bold;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          text-align: right;
+          font-weight: bold;
+          font-size: 1.2em;
+          text-shadow: 5px 5px 5px #000;
+        }
+      }
+    }
+  }
+}
+.clients_results {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #c38724;
+  h1 {
+    z-index: 99;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../../Images/flowers.png");
+    background-size: contain;
+    right: 0;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../../Images/flowers.png");
+    background-size: contain;
+    left: 0;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+  }
+  .swiper {
+    width: 50%;
+    height: 50%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 400px;
+    object-fit: cover;
+  }
+}
+.forum {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("../../Images/top_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  &_child {
+    width: 60%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    &_product {
+      &::before {
+        background: url("../../Images/water_3.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 400px;
+        content: "";
+        position: absolute;
+        height: 500px;
+        z-index: 999;
+        opacity: 0.6;
+        left: 45%;
+      }
+    }
+    form {
+      background: #fff;
+      width: 460px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 20px;
+      p {
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+      }
+      h3,
+      h4 {
+        margin: 0px 0 0 0 !important;
+        text-align: center;
+      }
+      h3 {
+        color: red;
+        font-size: 1.5em;
+      }
+      h4 {
+        color: #c38724;
+        font-size: 2em;
+      }
+      div {
+        margin-bottom: 20px;
+      }
+      input {
+        width: 300px;
+        border-radius: 20px;
+        padding: 7px;
+        border: 2px solid #000;
+        outline: none;
+        padding-right: 20px;
+        &::placeholder {
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+    img {
+      width: 400px;
+      object-fit: cover;
+      margin: 0;
+      transform: rotate(20deg);
+    }
+    .cntr_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: 250px;
+        border-radius: 20px;
+        border: 2px solid #000;
+        box-shadow: 0 5px 5px 0 #000;
+        outline: none;
+        padding: 7px;
+        background: #35b29a;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+        color: #fff;
+        cursor: pointer;
+        &:focus {
+          box-shadow: inset 0 5px 5px 0 #000;
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    width: 350px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+.howtouse {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("../../Images/top_bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  color: #fff;
+  h1 {
+    z-index: 99;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  &_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &_each {
+      width: 300px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px 0 20px 0;
+      box-shadow: inset 2em 0 2em #c38724, 0 5px 5px 0 rgb(0, 0, 0);
+      position: relative;
+      z-index: 99;
+      h2 {
+        color: #fff;
+        font-weight: bold;
+        border-bottom: 7px solid #3affd8;
+      }
+      &::before {
+        background: url("../../Images/water_3.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 500px;
+        content: "";
+        position: absolute;
+        height: 500px;
+        z-index: -1;
+        opacity: 0.3;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    padding: 0 !important;
+    &::before {
+      content: "";
+      position: absolute;
+      background: transparent;
+      width: 0%;
+      height: 100%;
+      transform: rotate(0deg);
+    }
+    h1 {
+      color: #fff;
+      z-index: 999;
+      font-size: 2em;
+      margin-bottom: 0;
+      span {
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+    .hero_child {
+      width: 100%;
+      flex-direction: column;
+      background: transparent;
+      backdrop-filter: blur(50%);
+      box-shadow: 0 5px 5px 0 #000;
+      height: 100%;
+      padding: 0;
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        p {
+          color: #000;
+          font-size: 1.5em;
+        }
+      }
+      img {
+        width: 100%;
+        z-index: 99;
+      }
+    }
+  }
+  .advantages {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    h1 {
+      color: #000;
+      z-index: 999;
+      font-size: 2em;
+      margin-bottom: 2%;
+      span {
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: transparent;
+      left: 0%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../Images/flowers.png") no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+    }
+    &_child {
+      justify-content: center;
+    }
+  }
+  .components {
+    h1 {
+      color: #fff;
+      z-index: 999;
+      font-size: 2em;
+      margin-bottom: 2%;
+      span {
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+    &_child {
+      width: 100%;
+      flex-direction: column;
+      padding: 0 7px 0 7px;
+      &_each {
+        width: 333px;
+        margin-bottom: 20px;
+        &::before {
+          background: url("../../Images/water_3.png") no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 100%;
+          content: "";
+          position: absolute;
+          height: 500px;
+          z-index: -1;
+          opacity: 0.5;
+        }
+        li {
+          text-shadow: 5px 5px 5px #000;
+          text-align: center !important;
+        }
+      }
+    }
+  }
+  .clients_results {
+    &::after {
+      background: url("../../Images/flowers.png") no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: transparent;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide img {
+      width: 80%;
+    }
+  }
+  .forum {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+      url("../../Images/top_bg.jpg");
+    background-position: center;
+    background-size: contain;
+    &_child {
+      width: 100%;
+      padding: 0;
+      flex-direction: column;
+      height: 100%;
+      &_product {
+        &::before {
+          background: "";
+          content: "";
+          width: 0%;
+          display: none;
+        }
+      }
+      form {
+        width: 360px;
+        border-radius: 0px;
+        p {
+          font-size: 1.5em;
+        }
+      }
+      img {
+        width: 100%;
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .howtouse {
+    h1{
+      text-align: center;
+    }
+    &_child {
+      flex-direction: column;
+      width: 100%;
+      &_each {
+        width: 333px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+        box-shadow: inset 2em 0 2em #c38724, 0 5px 5px 0 rgb(0, 0, 0);
+        position: relative;
+        z-index: 99;
+        margin-bottom: 20px;
+        h2 {
+          color: #3affd8;
+        }
+        &::before {
+          background: url("../../Images/water_3.png") no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 100%;
+          content: "";
+          position: absolute;
+          height: 500px;
+          z-index: -1;
+          opacity: 0.3;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            list-style: none;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
